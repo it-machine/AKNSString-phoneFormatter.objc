@@ -1,4 +1,4 @@
-# AKNSString+phoneFormatter.objc
+# AKNSString+phoneFormatter
 
 ## Installation
 
