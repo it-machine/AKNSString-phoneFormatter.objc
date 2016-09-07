@@ -12,6 +12,11 @@ And then execute:
 
     $ pod install
 
+
+Import in your project:
+```objc
+#import "AKNSString+phoneFormatter.h"
+```
 ## Usage
 
 <li>Set phone format to full number
@@ -47,7 +52,14 @@ Result:
 ```
 <li>Enter a phone from kyeboard
 
-Firstly you need to set phone prefix. 
+Firstly add target to your textField property:
+```objc
+
+[self.myTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
+}
+```
+
+Then you need to set phone prefix. 
 In textField "textFieldShouldBeginEditing" or "textFieldDidBeginEditing" delegate methods call this:
 ```objc
 
@@ -55,7 +67,7 @@ In textField "textFieldShouldBeginEditing" or "textFieldDidBeginEditing" delegat
     textField.text = [textField.text phonePrefix];
 }
 ```
-And then in in textField "textFieldDidChange" delegate method:
+And then in textField "textFieldDidChange" method:
 ```objc
 
 -(void)textFieldDidChange :(UITextField *)textField{
