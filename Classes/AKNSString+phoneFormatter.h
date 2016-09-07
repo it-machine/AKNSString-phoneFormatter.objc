@@ -36,7 +36,6 @@
 -(NSString*)phonePrefix;
 
 //Set phone format.
-//Call this in textField "textFieldDidChange" delegate method.
 -(NSString*)phoneFormatFromString:(NSString*)phoneNumStr;
 
 @end
