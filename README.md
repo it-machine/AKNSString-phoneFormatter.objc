@@ -5,7 +5,7 @@
 Add this line to your application's Podfile:
 
 ```ruby
-pod 'AKNSString+phoneFormatter.obj'
+pod 'AKNSString+phoneFormatter'
 ```
 
 And then execute:
