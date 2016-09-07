@@ -65,3 +65,4 @@ And then in in textField "textFieldDidChange" delegate method:
 ## Contributing
 
 ## License
+The gem is available as open source under the terms of the MIT License.
