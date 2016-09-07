@@ -45,7 +45,23 @@ Result:
 ```
 71111111111
 ```
-    
+<li>Enter a phone from kyeboard
+
+Firstly you need to set phone prefix. 
+In textField "textFieldShouldBeginEditing" or "textFieldDidBeginEditing" delegate methods call this:
+```objc
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField{
+    textField.text = [textField.text phonePrefix];
+}
+```
+And then in in textField "textFieldDidChange" delegate method:
+```objc
+
+-(void)textFieldDidChange :(UITextField *)textField{
+    textField.text = [textField.text phoneFormatFromString:textField.text];
+}
+```
 ## Contributing
 
 ## License
