@@ -13,7 +13,7 @@ And then execute:
     $ pod install
 
 ## Usage
-```
+```objc
 -(NSString*)setFullPhoneFormat:(NSString*)phone;
 ```
 
