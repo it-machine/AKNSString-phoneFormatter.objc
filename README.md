@@ -55,7 +55,9 @@ Result:
 Firstly add target to your textField property:
 ```objc
 
-[self.myTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
+[self.myTextField addTarget:self 
+                     action:@selector(textFieldDidChange:) 
+           forControlEvents:UIControlEventEditingChanged];
 ```
 
 Then you need to set phone prefix. 
