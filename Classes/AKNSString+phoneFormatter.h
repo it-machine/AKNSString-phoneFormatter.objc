@@ -1,5 +1,5 @@
 //
-//  NSString+phoneFormatter.h
+//  AKNSString+phoneFormatter.h
 //  doytra
 //
 //  Created by Artem Konarev on 04.09.16.

@@ -1,12 +1,12 @@
 //
-//  NSString+phoneFormatter.m
+//  AKNSString+phoneFormatter.m
 //  doytra
 //
 //  Created by Artem Konarev on 04.09.16.
 //  Copyright © 2016 Сергей Романков. All rights reserved.
 //
 
-#import "NSString+phoneFormatter.h"
+#import "AKNSString+phoneFormatter.h"
 #import <objc/runtime.h>
 
 static char PREFIX_KEY;
